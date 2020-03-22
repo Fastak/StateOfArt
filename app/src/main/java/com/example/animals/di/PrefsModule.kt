@@ -8,6 +8,12 @@ import dagger.Provides
 import javax.inject.Qualifier
 import javax.inject.Singleton
 
+const val CONTEXT_APP = "Application context"
+const val CONTEXT_ACTIVITY = "Activity context"
+
+@Qualifier
+annotation class TypeOfContext(val type: String)
+
 @Module
 open class PrefsModule {
 
@@ -25,9 +31,3 @@ open class PrefsModule {
         return SharedPreferencesHelper(activity)
     }
 }
-
-const val CONTEXT_APP = "Application context"
-const val CONTEXT_ACTIVITY = "Activity context"
-
-@Qualifier
-annotation class TypeOfContext(val type: String)

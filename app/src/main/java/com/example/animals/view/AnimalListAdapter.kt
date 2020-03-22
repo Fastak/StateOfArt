@@ -1,6 +1,5 @@
 package com.example.animals.view
 
-import android.os.Parcel
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,9 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.animals.R
 import com.example.animals.databinding.ItemAnimalBinding
 import com.example.animals.model.Animal
-import com.example.animals.util.getProgressDrawable
-import com.example.animals.util.loadImage
-import kotlinx.android.synthetic.main.item_animal.view.*
 
 class AnimalListAdapter(private val animalList: ArrayList<Animal>) :
     RecyclerView.Adapter<AnimalListAdapter.AnimalViewHolder>(), AnimalClickListener {

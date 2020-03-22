@@ -4,23 +4,19 @@ package com.example.animals.view
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.palette.graphics.Palette
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
-
 import com.example.animals.R
 import com.example.animals.databinding.FragmentDetailBinding
 import com.example.animals.model.Animal
 import com.example.animals.model.AnimalPalette
-import com.example.animals.model.Speed
-import com.example.animals.util.getProgressDrawable
-import com.example.animals.util.loadImage
 
 /**
  * A simple [Fragment] subclass.
@@ -68,7 +64,7 @@ class DetailFragment : Fragment() {
 
                 override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
                     Palette.from(resource)
-                        .generate() { palette ->
+                        .generate { palette ->
                             val intColor = palette?.lightMutedSwatch?.rgb ?: 0
                             dataBinding.palette = AnimalPalette(intColor)
                         }

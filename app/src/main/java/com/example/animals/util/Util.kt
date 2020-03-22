@@ -1,8 +1,6 @@
 package com.example.animals.util
 
-import android.app.DownloadManager
 import android.content.Context
-import android.webkit.URLUtil
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable

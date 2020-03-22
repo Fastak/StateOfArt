@@ -3,9 +3,10 @@ package com.example.animals.util
 import android.content.Context
 import android.preference.PreferenceManager
 
+const val PREF_API_KEY = "API_key"
+
 class SharedPreferencesHelper(context: Context) {
 
-    private val PREF_API_KEY = "API key"
     private val prefs = PreferenceManager.getDefaultSharedPreferences(context.applicationContext)
 
     fun saveApiKey(key: String?) {

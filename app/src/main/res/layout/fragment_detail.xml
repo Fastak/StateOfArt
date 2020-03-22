@@ -31,31 +31,35 @@
 
         <TextView
             style="@style/Title"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:text="@{animal.name}" />
+            android:text="@{animal.name}"
+            android:gravity="center"/>
 
         <TextView
             style="@style/Text"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:text="@{animal.location}" />
+            android:text="@{animal.location}"
+            android:gravity="center"/>
 
         <TextView
             style="@style/Text"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:text="@{animal.lifeSpan}" />
+            android:text="@{animal.lifeSpan}"
+            android:gravity="center"/>
 
         <TextView
             style="@style/Text"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:text="@{animal.diet}" />
+            android:text="@{animal.diet}"
+            android:gravity="center"/>
 
     </LinearLayout>
 </layout>
